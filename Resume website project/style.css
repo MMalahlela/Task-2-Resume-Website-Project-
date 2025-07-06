@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  scroll-behavior: smooth;
+    background-color: #d2d2d2dd; /* light grey */
+}
+
+
+header {
+  background: url('wallpaper.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: right;
+  padding: 100px 20px;
+}
+
+.logo {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.slogan {
+  font-size: 1.5em;
+  margin-top: 12px;
+}
+
+nav {
+  background: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  display: block;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2, section h3 {
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.about-container img {
+  max-width: 50%;
+  border-radius: 30px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+#programs ul, #donate ul {
+  list-style: none;
+  padding: 0;
+}
+
+#programs li, #donate li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#contact p {
+  font-weight: bold;
+}
+
+#contact .map {
+  margin-top: 20px;
+}
+
+/* Home section stays with the background image you already have */
+
+/* About section */
+#about {
+  background-color: #ffffff; /* white background */
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Programs section */
+#programs { 
+  background-color: #ffffff; /* subtle light grey */
+  border-bottom: 2px solid #ccc;
+}
+
+/* Donate section */
+#donate {
+  background-color: #ffffff; /* white background */
+  border-bottom: 2px solid #ccc;
+}
+
+/* Contact section */
+#contact {
+  text-align: center;  
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+}
+
+#gallery {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+ width: 100%;
+  height: 300px; /* force consistent height */
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
